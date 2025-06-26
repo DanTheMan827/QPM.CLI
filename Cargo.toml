@@ -15,7 +15,6 @@ path = "src/main.rs"
 [lib]
 required-features = []
 
-
 [features]
 default = ["templatr", "network_test", "cli", "gitoxide"]
 templatr = ["dep:templatr"]
@@ -31,6 +30,7 @@ vergen = { version = "8", features = [
 ], optional = true }
 # if you wish to disable certain features
 color-eyre = { version = "0.6", default-features = false }
+winresource = "0.1.22"
 
 [dev-dependencies]
 assert_cmd = "2.0.14"
